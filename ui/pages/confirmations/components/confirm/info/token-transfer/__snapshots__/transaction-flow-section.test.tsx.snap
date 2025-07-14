@@ -1,0 +1,25 @@
+exports[`<TransactionFlowSection /> renders correctly 1`] = `
+<div>
+  <div
+    class="mm-box mm-box--margin-bottom-4 mm-box--padding-2 mm-box--background-color-background-default mm-box--rounded-md"
+    data-testid="confirmation__transaction-flow"
+  >
+    <div
+      class="mm-box mm-box--display-flex mm-box--flex-direction-row mm-box--justify-content-space-between"
+    >
+      <div class="confirm-info-row" style="flex-direction: column; min-height: 24px; position: relative; background: transparent;">
+        <p>From</p>
+        <span data-testid="sender-address">
+          <span style="mask-image: url('./images/icons/question.svg');"></span>0x2e0D7...5d09B
+        </span>
+      </div>
+      <span style="mask-image: url('./images/icons/arrow-right.svg');"></span>
+      <div class="confirm-info-row" style="flex-direction: column; min-height: 24px; position: relative; background: transparent;">
+        <p>To</p>
+        <span data-testid="recipient-address">
+          <span style="mask-image: url('./images/icons/question.svg');"></span>0x6B175...71d0F
+        </span>
+      </div>
+    </div>
+  </div>
+</div>`;
