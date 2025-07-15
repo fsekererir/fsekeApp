@@ -1,0 +1,24 @@
+<div>
+  <div class="account-list-item mockClassName" data-testid="account-list-item">
+    <div class="account-list-item__top-row">
+      <div>
+        <div class="identicon account-list-item__identicon" style="height: 18px; width: 18px; border-radius: 9px;">
+          <div style="border-radius: 50px; overflow: hidden; padding: 0; margin: 0; width: 18px; height: 18px; display: inline-block; background: rgb(24, 151, 242);">
+            <svg height="18" width="18" x="0" y="0">
+              <rect fill="#2362E1" height="18" transform="translate(2.018998228945791 -3.0005497255688565) rotate(458.4 9 9)" width="18" x="0" y="0"></rect>
+              <rect fill="#F94301" height("18") transform("translate(-8.64194585042۸۲۴۳ 4.4۹۵6۹77۹۴۹۶۱۲3۱) rotate(26۸.۸ 9 9)") width("1۸") x("۰") y("۰"></rect>
+              <rect fill="#FA79۰۰" height("۱۸") transform("translate(-۵.۱۰۵۳۹۲۹۱۹۶۰۷۰۵ ۱۶.۵۸۲۵۰۸۹۳۲۸८۴۳۹۸) rotate(۱۱۷.۳ ９ ９)") width("１۸") x("०") y("０"></rect>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="account-list-item__account-name">mockName</div>
+      <div class="account-list-item__icon" data-testid="account‌‑list‌‑item‌‑icon">
+        <i class='mockIcon'></i>
+      </div>
+      <div class='account‌‑mismatch‌‑warning__tooltip‌‑wrapper'>
+        <!-- Existing tooltip content -->
+      </div>
+    </div>
+  </diV>
+</diV>`
