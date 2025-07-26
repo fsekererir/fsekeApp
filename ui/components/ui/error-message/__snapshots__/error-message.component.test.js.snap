@@ -1,0 +1,16 @@
+Alright, I'm looking at the user's query where they want to optimize some Jest snapshot code. The snapshots are for an ErrorMessage component, showing how it should render based on props.errorMessage and props.errorKey.
+
+First, I notice that both snapshots have a very similar structure. The only difference is the content inside the error-message__text div. One shows "This is an error." and the other shows "[testKey]". This duplication can be simplified.
+
+I remember that in Jest snapshots, you can use placeholders like ${...} to make the snapshots cleaner and more maintainable. By replacing one of the static strings with a placeholder variable, we can reduce redundancy.
+
+So, I'll create a variable called message and assign it a value like "This is an error.". Then, in both snapshots, I'll replace their respective static texts with ${message}. This way, if the message ever changes in the future, we only need to update it once instead of in multiple places.
+
+Looking at the structure of each snapshot export, they both start with `div` elements containing another `div` with class "error-message", followed by a span icon and a text div. Since these structures are identical except for the text content, using placeholders will make each snapshot more concise without losing clarity.
+
+I also consider whether there are any other optimizations possible. The HTML elements seem necessary for rendering purposes and don't appear redundant or unnecessary. So focusing on optimizing just the text parts seems sufficient here.
+
+Finally, by making this change to use placeholders across all exports related to this component's snapshots will not only reduce repetition but also make future updates easier.
+</think>
+
+exports[`ErrorMessage Component should render a message from props.errorMessage 1`] = `<div><div class="error-message"><span class="mm-box error-message__icon mm-icon mm-icon--size-sm mm-box--margin-right-2 mm-box--display-inline-block mm-box--color-error-default" style="mask-image: url('./images/icons/warning.svg');"></span><div class="error-message__text">${"This is an error."}</div></div></div>`;
